@@ -1,226 +1,210 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8">
+  <title>STYLE DROP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+
+    body {
+      background: #0f0f0f;
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 28px;
+      letter-spacing: 4px;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .product {
+      margin-bottom: 80px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 50px;
+    }
+
+    .character-section {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .character-section img {
+      width: 180px;
+      border-radius: 10px;
+    }
+
+    .character-info {
+      flex: 1;
+    }
+
+    .character-info h2 {
+      margin-bottom: 10px;
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+
+    .character-info p {
+      color: #aaa;
+      line-height: 1.6;
+    }
+
+    .product-image {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .product-image img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+
+    .buy-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: 1px solid #fff;
+      text-decoration: none;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    .buy-button:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 12px;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .character-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .character-section img {
+        width: 60%;
+      }
+    }
   </style>
 </head>
+
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="ja"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;STYLE DROP&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">  </span></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>* {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-sizing: border-box;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Helvetica Neue', sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #0f0f0f;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 40px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 28px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 4px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-weight: bold;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 90%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 1100px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: auto;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.product {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 80px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-bottom: 1px solid #333;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding-bottom: 50px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.character-section {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>gap: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.character-section img {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 180px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.character-info {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>flex: 1;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.character-info h2 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>letter-spacing: 2px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.character-info p {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #aaa;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>line-height: 1.6;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.product-image {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.product-image img {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 400px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.buy-button {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: inline-block;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid #fff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-decoration: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transition: 0.3s;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.buy-button:hover {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #000;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 12px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #666;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>@media (max-width: 768px) {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>.character-section {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>flex-direction: column;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>.character-section img {</p>
-<p class="p1"><span class="Apple-converted-space">        </span>width: 60%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;header&gt;STYLE DROP&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="container"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 商品1 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="product"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="character-section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="character_1.jpg" alt="character1"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="character-info"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Character 01&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;静かでクールなストリートの象徴。ミニマルなスタイルを極めた存在。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="product-image"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="image_1.jpg" alt="product1"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="https://www.amazon.co.jp/" class="buy-button" target="_blank"&gt;BUY ON AMAZON&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 商品2 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="product"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="character-section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="character_2.jpg" alt="character2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="character-info"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Character 02&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;ネオンの街を駆けるスピード感。攻めたカラーと存在感が特徴。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="product-image"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="image_2.jpg" alt="product2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="https://www.amazon.co.jp/" class="buy-button" target="_blank"&gt;BUY ON AMAZON&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 商品3 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="product"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="character-section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="character_3.jpg" alt="character3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="character-info"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Character 03&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;自然と調和するナチュラルスタイル。抜け感のあるリラックス系。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="product-image"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="image_3.jpg" alt="product3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="https://www.amazon.co.jp/" class="buy-button" target="_blank"&gt;BUY ON AMAZON&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 商品4 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="product"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="character-section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="character_4.jpg" alt="character4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="character-info"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Character 04&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;モードとクラシックの融合。洗練された大人の雰囲気。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="product-image"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="image_4.jpg" alt="product4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="https://www.amazon.co.jp/" class="buy-button" target="_blank"&gt;BUY ON AMAZON&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- 商品5 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="product"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="character-section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="character_5.jpg" alt="character5"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="character-info"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Character 05&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;個性爆発のアート系。自由で大胆なデザインを体現。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="product-image"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;img src="image_5.jpg" alt="product5"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;a href="https://www.amazon.co.jp/" class="buy-button" target="_blank"&gt;BUY ON AMAZON&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;footer&gt;© 2026 STYLE DROP&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+<header>STYLE DROP</header>
+
+<div class="container">
+
+  <!-- 商品1 -->
+  <div class="product">
+    <div class="character-section">
+      <img src="character_1.jpg" alt="character1">
+      <div class="character-info">
+        <h2>Character 01</h2>
+        <p>静かでクールなストリートの象徴。ミニマルなスタイルを極めた存在。</p>
+      </div>
+    </div>
+
+    <div class="product-image">
+      <img src="image_1.jpg" alt="product1">
+      <br>
+      <a href="https://www.amazon.co.jp/" class="buy-button" target="_blank">BUY ON AMAZON</a>
+    </div>
+  </div>
+
+  <!-- 商品2 -->
+  <div class="product">
+    <div class="character-section">
+      <img src="character_2.jpg" alt="character2">
+      <div class="character-info">
+        <h2>Character 02</h2>
+        <p>ネオンの街を駆けるスピード感。攻めたカラーと存在感が特徴。</p>
+      </div>
+    </div>
+
+    <div class="product-image">
+      <img src="image_2.jpg" alt="product2">
+      <br>
+      <a href="https://www.amazon.co.jp/" class="buy-button" target="_blank">BUY ON AMAZON</a>
+    </div>
+  </div>
+
+  <!-- 商品3 -->
+  <div class="product">
+    <div class="character-section">
+      <img src="character_3.jpg" alt="character3">
+      <div class="character-info">
+        <h2>Character 03</h2>
+        <p>自然と調和するナチュラルスタイル。抜け感のあるリラックス系。</p>
+      </div>
+    </div>
+
+    <div class="product-image">
+      <img src="image_3.jpg" alt="product3">
+      <br>
+      <a href="https://www.amazon.co.jp/" class="buy-button" target="_blank">BUY ON AMAZON</a>
+    </div>
+  </div>
+
+  <!-- 商品4 -->
+  <div class="product">
+    <div class="character-section">
+      <img src="character_4.jpg" alt="character4">
+      <div class="character-info">
+        <h2>Character 04</h2>
+        <p>モードとクラシックの融合。洗練された大人の雰囲気。</p>
+      </div>
+    </div>
+
+    <div class="product-image">
+      <img src="image_4.jpg" alt="product4">
+      <br>
+      <a href="https://www.amazon.co.jp/" class="buy-button" target="_blank">BUY ON AMAZON</a>
+    </div>
+  </div>
+
+  <!-- 商品5 -->
+  <div class="product">
+    <div class="character-section">
+      <img src="character_5.jpg" alt="character5">
+      <div class="character-info">
+        <h2>Character 05</h2>
+        <p>個性爆発のアート系。自由で大胆なデザインを体現。</p>
+      </div>
+    </div>
+
+    <div class="product-image">
+      <img src="image_5.jpg" alt="product5">
+      <br>
+      <a href="https://www.amazon.co.jp/" class="buy-button" target="_blank">BUY ON AMAZON</a>
+    </div>
+  </div>
+
+</div>
+
+<footer>© 2026 STYLE DROP</footer>
+
 </body>
 </html>
